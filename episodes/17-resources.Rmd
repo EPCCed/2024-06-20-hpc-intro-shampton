@@ -30,8 +30,8 @@ jobs on the cluster - including input parameters, job options and resources used
 
 ::: dicussion
 ## Our example
-In the rest of this episode, we will use an example parallel application that sharpens
-an input image. Although this is a toy problem, it exhibits all the properties of a full
+In the rest of this episode, we will use an example parallel application that calculates 
+an estimate of the value of Pi. Although this is a toy problem, it exhibits all the properties of a full
 parallel application that we are interested in for this course.
 
 The main resource we will consider here is the use of compute core time as this is the
@@ -56,7 +56,6 @@ be using
 
   - **Program** The computer program we are executing (`pi-mpi.py` in the examples below)
   - **Application** The combination of computer program with particular input parameters
-     (`pi-mpi.py` with `fuzzy.pgm` in our example below)
 
 ## Accessing the software and input
 
