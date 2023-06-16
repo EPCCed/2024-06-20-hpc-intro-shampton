@@ -1,4 +1,7 @@
-::: discussion
+::: prereq
+
+## Required Files
+
 The program used in this example can be retrieved using wget or a browser and copied to the remote.
 
 **Using wget**: 
@@ -6,5 +9,8 @@ The program used in this example can be retrieved using wget or a browser and co
 `r config$remote$prompt` wget `r config$url``r config$baseurl`/files/pi-mpi.py
 ```
 
-**Using a web browser**: `r config$url``r config$baseurl`/files/pi-mpi.py
+**Using a web browser**: 
+```bash
+`r config$url``r config$baseurl`/files/pi-mpi.py
+```
 :::
