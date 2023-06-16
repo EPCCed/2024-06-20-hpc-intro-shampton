@@ -31,9 +31,8 @@ The program used in this example can be retrieved using wget or a browser and co
 ```
 
 **Using a web browser**: 
-```bash
-`r config$url``r config$baseurl`/files/hpc-intro-data.tar.gz
-```
+
+[`r config$url``r config$baseurl`/files/hpc-intro-data.tar.gz](`r config$url``r config$baseurl`/files/hpc-intro-data.tar.gz)
 :::
 
 Computing with a remote computer offers very limited use if we cannot get files
@@ -243,7 +242,7 @@ modify this command?
 ```bash
 `r config$local$prompt` rsync --help | grep port
      --port=PORT             specify double-colon alternate port number
-See http://rsync.samba.org/ for updates, bug reports, and answers
+See https://rsync.samba.org/ for updates, bug reports, and answers
 `r config$local$prompt` rsync --port=768 test.txt `r config$remote$user`@`r config$remote$login`:
 ```
 :::
