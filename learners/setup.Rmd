@@ -79,8 +79,8 @@ a Unix/Linux emulator.
 For advanced users, you may choose one of the following alternatives: 
 
  * Install the [Windows Subsystem for   Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
- * Use the Windows [Powershell](tps://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7)
- * Read up on [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)
+ * Use the Windows [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7)
+ * Read up on [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](https://faculty.smu.edu/reynolds/unixtut/windows.html)
 > ## Warning
 >
 > Commands in the Windows Subsystem for Linux (WSL), Powershell, or Cygwin
@@ -109,7 +109,7 @@ To open Terminal, try one or both of the following:
 #### Reference 
 
 [How to Use Terminal on a Mac](
-http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
+https://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
 
 :::::::::::::::::::::::::
 
@@ -157,7 +157,7 @@ Modern versions of Windows have SSH available in Powershell. You can test if it 
 installed, you should see some useful output. If it is not installed, you will get an error. If SSH is not available in Powershell, then
 you should install MobaXterm as described below.
 
-An alternative is to install MobaXterm from [http://mobaxterm.mobatek.net](http://mobaxterm.mobatek.net). You will want to get the Home edition (Installer edition). However, if Powershell works, you do not need this.
+An alternative is to install MobaXterm from [https://mobaxterm.mobatek.net](https://mobaxterm.mobatek.net). You will want to get the Home edition (Installer edition). However, if Powershell works, you do not need this.
 
 :::
 
