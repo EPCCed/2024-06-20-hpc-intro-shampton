@@ -11,8 +11,8 @@ Here is a modified script
 #!/bin/bash
 
 #SBATCH --partition=`r config$sched$partition`
-#SBATCH --qos={{ site.sched.qos }}
-#SABTCH --reservation=`r config$sched$reservation`
+#SBATCH --qos=`r config$sched$qos`
+#SBATCH --reservation=`r config$sched$reservation`
 #SBATCH --time=00:00:30
 
 #SBATCH --nodes=1

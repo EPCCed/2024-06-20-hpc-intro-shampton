@@ -1,9 +1,9 @@
 ```bash
 #!/bin/bash
 
-#SBATCH --partition={{ site.sched.partition }}
-#SBATCH --qos={{ site.sched.qos }}
-#SBATCH --reservation={{ site.sched.reservation }}
+#SBATCH --partition=`r config$sched$partition`
+#SBATCH --qos=`r config$sched$qos`
+#SBATCH --reservation=`r config$sched$reservation`
 #SBATCH --time=00:05:00
 
 #SBATCH --nodes=1

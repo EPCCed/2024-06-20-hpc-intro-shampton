@@ -418,7 +418,6 @@ As for our other jobs, we launch using the ``r config$sched$submit$name`` comman
 `r config$remote$prompt_work` `r config$sched$submit$name` run-pi-mpi.slurm
 ```
 
-
 The program generates no output with all details printed to the job log.
 
 ```{r, child=paste(snippets, '/scheduler/parallel-challenge.Rmd', sep=''), eval=TRUE}
