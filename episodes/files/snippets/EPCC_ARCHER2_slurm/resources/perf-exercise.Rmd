@@ -24,7 +24,7 @@ Given your results, try to answer the following questions:
 
 ::: solution
 
-The table below gives example results for {{ site.host_name }} based on the example 
+The table below gives example results for `r config$remote$name` based on the example 
 runtimes given in the solution above.
 
 | Cores      | Overall run time (s) | Ideal speedup | Actual speedup | Parallel efficiency |

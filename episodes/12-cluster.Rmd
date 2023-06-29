@@ -90,7 +90,7 @@ single argument.
 
 Go ahead and open your terminal or graphical SSH client, then log in to the
 cluster using your username and the remote computer you can reach from the
-outside world, {{ site.remote.location }}.
+outside world, `r config$remote$location`.
 
 ```bash
 `r config$local$prompt` ssh `r config$remote$user`@`r config$remote$login`
@@ -305,7 +305,7 @@ each resource is.
 The local filesystems (ext, tmp, xfs, zfs) will depend on whether you're
 on the same login node (or compute node, later on). Networked filesystems
 (beegfs, cifs, gpfs, nfs, pvfs) will be similar --- but may include
-{{ site.remote.user }}, depending on how it is [mounted](
+`r config$remote$user`, depending on how it is [mounted](
 https://en.wikipedia.org/wiki/Mount_(computing)).
 :::
 

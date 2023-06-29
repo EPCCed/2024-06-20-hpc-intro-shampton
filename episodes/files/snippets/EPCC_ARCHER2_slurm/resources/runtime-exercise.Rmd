@@ -29,7 +29,7 @@ seconds. Is this what you observe?
 
 ::: solution
 
-The table below shows example timings for runs on {{ site.remote.name }}
+The table below shows example timings for runs on `r config$remote$name`
 
 | Cores      | Overall run time (s) | Calculation time (s) |       Calculation core seconds |
 |-----------:|---------------------:|---------------------:|-------------------------------:|
