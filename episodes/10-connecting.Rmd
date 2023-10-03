@@ -210,7 +210,7 @@ ssh yourUsername@`r config$remote$name`
 ```
 
 ```{r showwd, results='asis', include=FALSE}
-login_output <- paste('files/snippets/login_output', config$remote$host_id, sep='.')
+login_output <- paste('files/snippets/login_output.EPCC_ARCHER2', config$remote$host_id, sep='.')
 ```
 
 ```{r, child=login_output, eval=TRUE}
