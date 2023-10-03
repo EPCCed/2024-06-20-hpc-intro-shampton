@@ -7,6 +7,7 @@ exercises: 15
 ```{r load_config, include=FALSE}
 library(yaml)
 config <- yaml.load_file("lesson_config.yaml")
+snippets <- paste('files/snippets/', config$snippets, sep='')
 ```
 
 :::::: questions
@@ -209,11 +210,7 @@ or if SSH keys have not been enabled
 ssh yourUsername@`r config$remote$name`
 ```
 
-```{r showwd, results='asis', include=FALSE}
-login_output <- paste('files/snippets/login_output.EPCC_ARCHER2', config$remote$host_id, sep='.')
-```
-
-```{r, child=login_output, eval=TRUE}
+```{r, child=paste(snippets, '/login_output.Rmd', sep=''), eval=TRUE}
 ```
 
 If you've connected successfully, you should see a prompt like the one below.
