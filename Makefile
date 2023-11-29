@@ -4,6 +4,7 @@
 # Settings
 MAKEFILES=Makefile $(wildcard *.mk)
 R=/usr/bin/R -e
+RS=/usr/bin/R
 DST=site
 
 # Find Docker
@@ -36,6 +37,21 @@ else
 		-p 4321:4321 \
 		carpentries/workbench:latest \
 		${R} 'sandpaper::serve(host="0.0.0.0")'
+endif
+
+## * docker-serve     : use Docker to serve the site
+docker-build :
+ifeq (, $(DOCKER))
+	$(error Your system does not appear to have Docker installed)
+else
+	@$(DOCKER) build --pull -t carpentries/workbench:latest docker
+	@$(DOCKER) run --rm -it \
+		-v $${PWD}:/lesson \
+		-p 4321:4321 \
+		carpentries/workbench:latest \
+	    /usr/bin/Rscript --no-save /lesson/docker/sessioncheck.R
+		
+	
 endif
 
 ## * clean            : clean up junk files
