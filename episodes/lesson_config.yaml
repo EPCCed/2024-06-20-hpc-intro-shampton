@@ -4,7 +4,7 @@ local:
   bash_shebang: "#!/bin/bash"
 
 snippets: EPCC_ARCHER2_slurm
-baseurl: "https://epcced.github.io/2023-12-15-noc-hpcintro"
+baseurl: "https://epcced.github.io/2024-01-19-hpc-intro-noc"
 
 remote:
   name: "ARCHER2"
