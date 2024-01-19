@@ -23,7 +23,7 @@ remote:
 sched:
   name: "Slurm"
   partition: "standard"
-  reservation: "shortqos"
+  #reservation: "shortqos"
   qos: "short"
   budget: "short"
   submit:
