@@ -28,7 +28,7 @@ life_cycle: "beta"
 license: "CC-BY 4.0"
 
 # Link to the source repository for this lesson
-source: "https://github.com/EPCCed/2023-01-19-hpc-intro-noc"
+source: "https://github.com/EPCCed/2024-01-19-hpc-intro-noc"
 
 # Default branch of your lesson
 branch: "main"
