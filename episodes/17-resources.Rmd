@@ -28,7 +28,7 @@ Benchmarking is essentially performing simple experiments to help understand
 how the performance of our work varies as we change the properties of the
 jobs on the cluster - including input parameters, job options and resources used.
 
-::: dicussion
+::: discussion
 ## Our example
 In the rest of this episode, we will use an example parallel application that calculates 
 an estimate of the value of Pi. Although this is a toy problem, it exhibits all the properties of a full

@@ -1,6 +1,7 @@
 # sandpaper files
 episodes/*html
 site/*
+!site/README.md
 
 # History files
 .Rhistory
@@ -47,4 +48,7 @@ docs/
 
 # translation temp files
 po/*~
+
+# renv
+renv/
 

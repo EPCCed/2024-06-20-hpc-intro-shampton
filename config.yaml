@@ -15,7 +15,7 @@ carpentry: "incubator"
 title: "ARCHER2 Introduction to HPC Software Carpentry"
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 2023-06-14
+created: 2024-02-14
 
 # Comma-separated list of keywords for the lesson
 keywords: "software, data, lesson, The Carpentries, HPC, EPCC"
@@ -28,7 +28,7 @@ life_cycle: "beta"
 license: "CC-BY 4.0"
 
 # Link to the source repository for this lesson
-source: "https://github.com/EPCCed/2024-01-19-hpc-intro-noc"
+source: "https://github.com/EPCCed/2024-02-23-hpc-intro-brunel"
 
 # Default branch of your lesson
 branch: "main"
@@ -60,7 +60,6 @@ contact: "support@archer2.ac.uk"
 
 # Order of episodes in your lesson
 episodes:
-  - 10-connecting.Rmd
   - 11-hpc-intro.Rmd
   - 12-cluster.Rmd
   - 13-scheduler.Rmd
@@ -71,6 +70,7 @@ episodes:
 
 # Information for Learners
 learners:
+ - reference.md
 
 # Information for Instructors
 instructors:
