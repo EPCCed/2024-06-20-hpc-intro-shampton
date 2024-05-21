@@ -324,7 +324,7 @@
 <hr>
 <p>Last updated on 2024-05-21 |
         
-        <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/edit/main/episodes/11-hpc-intro.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/11-hpc-intro.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -563,7 +563,7 @@ use like [gitbash][gitbash]
 <hr>
 <p>Last updated on 2024-05-21 |
         
-        <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/edit/main/episodes/12-cluster.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/12-cluster.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -717,7 +717,7 @@ neighbors.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">It’s a Beautiful Day in the Neighborhood</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The deepest layer should differ: <code>userid</code> is uniquely
 yours. Are there differences in the path at higher levels?</p>
@@ -854,7 +854,7 @@ computer cluster, you need to log out first. To do so, type
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>There are several ways to do this. Most operating systems have a
 graphical system monitor, like the Windows Task Manager. More detailed
@@ -902,7 +902,7 @@ node.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1044,7 +1044,7 @@ use like [gitbash][gitbash]
 <hr>
 <p>Last updated on 2024-05-21 |
         
-        <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/edit/main/episodes/13-scheduler.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/13-scheduler.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1188,8 +1188,8 @@ job script across and resubmit:</p>
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> cd /work/ta133/ta133/userid</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> cp ~/example-job.sh .</span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> sbatch <span class="at">--partition</span><span class="op">=</span>standard <span class="at">--qos</span><span class="op">=</span>short example-job.sh</span></code></pre>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> cp ~/example-job.sh .</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> sbatch <span class="at">--partition</span><span class="op">=</span>standard <span class="at">--qos</span><span class="op">=</span>short example-job.sh</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1204,7 +1204,7 @@ the command <code>squeue -u userid</code>.</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> squeue <span class="at">-u</span> userid</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> squeue <span class="at">-u</span> userid</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1227,8 +1227,8 @@ parameter. Let’s try using it to monitor another job.</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> sbatch <span class="at">--partition</span><span class="op">=</span>standard <span class="at">--qos</span><span class="op">=</span>short example-job.sh</span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> watch <span class="at">-n</span> 15 squeue <span class="at">-u</span> userid</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> sbatch <span class="at">--partition</span><span class="op">=</span>standard <span class="at">--qos</span><span class="op">=</span>short example-job.sh</span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> watch <span class="at">-n</span> 15 squeue <span class="at">-u</span> userid</span></code></pre>
 </div>
 <p>You should see an auto-updating display of your job’s status. When it
 finishes, it will disappear from the queue. Press <code>Ctrl-c</code>
@@ -1271,7 +1271,7 @@ to change the name of a job. Add an option to the script:</p>
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> cat example-job.sh</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> cat example-job.sh</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1287,8 +1287,8 @@ echo "This script has finished successfully."</code></pre>
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> sbatch <span class="at">--partition</span><span class="op">=</span>standard <span class="at">--qos</span><span class="op">=</span>short example-job.sh</span>
-<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> squeue <span class="at">-u</span> userid</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> sbatch <span class="at">--partition</span><span class="op">=</span>standard <span class="at">--qos</span><span class="op">=</span>short example-job.sh</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> squeue <span class="at">-u</span> userid</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1372,7 +1372,7 @@ options we have been specifying on the command line
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> cat example-job.sh</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> cat example-job.sh</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1421,7 +1421,7 @@ seconds of walltime, and attempt to run a job for two minutes.</p>
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> cat example-job.sh</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> cat example-job.sh</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1443,13 +1443,13 @@ check the log file.</p>
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> sbatch example-job.sh</span>
-<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> watch <span class="at">-n</span> 15 squeue <span class="at">-u</span> userid</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> sbatch example-job.sh</span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> watch <span class="at">-n</span> 15 squeue <span class="at">-u</span> userid</span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> cat slurm-38193.out</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> cat slurm-38193.out</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1500,8 +1500,8 @@ it runs long enough for you to cancel it before it is killed!).</p>
 <div class="codewrapper sourceCode" id="cb24">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> sbatch example-job.sh</span>
-<span id="cb24-2"><a href="#cb24-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> squeue <span class="at">-u</span> userid</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> sbatch example-job.sh</span>
+<span id="cb24-2"><a href="#cb24-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> squeue <span class="at">-u</span> userid</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1517,9 +1517,9 @@ cancelled.</p>
 <div class="codewrapper sourceCode" id="cb26">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> scancel 38759</span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> scancel 38759</span>
 <span id="cb26-2"><a href="#cb26-2" tabindex="-1"></a><span class="co"># It might take a minute for the job to disappear from the queue...</span></span>
-<span id="cb26-3"><a href="#cb26-3" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> squeue <span class="at">-u</span> userid</span></code></pre>
+<span id="cb26-3"><a href="#cb26-3" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> squeue <span class="at">-u</span> userid</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1632,10 +1632,10 @@ browser and copied to the remote.</p>
 <div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> wget https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/pi-mpi.py</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> wget https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/pi-mpi.py</span></code></pre>
 </div>
 <p><strong>Using a web browser</strong>:</p>
-<p><a href="https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/pi-mpi.py" class="external-link">https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/pi-mpi.py</a></p>
+<p><a href="https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/pi-mpi.py" class="external-link">https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/pi-mpi.py</a></p>
 </div>
 </div>
 </div>
@@ -1688,7 +1688,7 @@ command.</p>
 <div class="codewrapper sourceCode" id="cb34">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> sbatch run-pi-mpi.slurm</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> sbatch run-pi-mpi.slurm</span></code></pre>
 </div>
 <p>The program generates no output with all details printed to the job
 log.</p>
@@ -1805,7 +1805,7 @@ use like [gitbash][gitbash]
 <hr>
 <p>Last updated on 2024-05-21 |
         
-        <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/edit/main/episodes/14-modules.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/14-modules.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -1893,7 +1893,7 @@ of the system you are using.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> module avail</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> module avail</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1933,7 +1933,7 @@ loaded, you will see a message telling you so</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> module list</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> module list</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2101,8 +2101,8 @@ node).</p>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> nano ncdump-module.sh</span>
-<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> cat ncdump-module.sh</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> nano ncdump-module.sh</span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> cat ncdump-module.sh</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2118,7 +2118,7 @@ ncdump --version</code></pre>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span>  python-module.sh</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span>  python-module.sh</span></code></pre>
 </div>
 </div>
 </div>
@@ -2151,7 +2151,7 @@ use like [gitbash][gitbash]
 <hr>
 <p>Last updated on 2024-05-21 |
         
-        <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/edit/main/episodes/15-transferring-files.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/15-transferring-files.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2196,10 +2196,10 @@ browser and copied to the remote.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> wget https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/hpc-intro-data.tar.gz</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> wget https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/hpc-intro-data.tar.gz</span></code></pre>
 </div>
 <p><strong>Using a web browser</strong>:</p>
-<p><a href="https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/hpc-intro-data.tar.gz" class="external-link">https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/hpc-intro-data.tar.gz</a></p>
+<p><a href="https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/hpc-intro-data.tar.gz" class="external-link">https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/hpc-intro-data.tar.gz</a></p>
 </div>
 </div>
 </div>
@@ -2230,7 +2230,7 @@ machine.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">[user@laptop</span> ~]$ wget https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/hpc-intro-data.tar.gz</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">[user@laptop</span> ~]$ wget https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/hpc-intro-data.tar.gz</span></code></pre>
 </div>
 <div id="tar.gz" class="callout discussion">
 <div class="callout-square">
@@ -2350,9 +2350,9 @@ following:</p>
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="ex">[user@laptop</span> ~]$ ssh userid@login.archer2.ac.uk</span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> curl <span class="at">-O</span> https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/hpc-intro-data.tar.gz</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> curl <span class="at">-O</span> https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/hpc-intro-data.tar.gz</span>
 <span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="ex">or</span></span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> wget https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/hpc-intro-data.tar.gz</span></code></pre>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> wget https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/hpc-intro-data.tar.gz</span></code></pre>
 </div>
 <p>Did it work? If not, what does the terminal output tell you about
 what happened?</p>
@@ -2737,7 +2737,7 @@ use like [gitbash][gitbash]
 <hr>
 <p>Last updated on 2024-05-21 |
         
-        <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/edit/main/episodes/17-resources.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/17-resources.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -2835,10 +2835,10 @@ browser and copied to the remote.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> wget https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/pi-mpi.py</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">userid@ln03:~</span><span class="op">&gt;</span> wget https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/pi-mpi.py</span></code></pre>
 </div>
 <p><strong>Using a web browser</strong>:</p>
-<p><a href="https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/pi-mpi.py" class="external-link">https://epcced.github.io/2024-02-23-hpc-intro-brunel/files/pi-mpi.py</a></p>
+<p><a href="https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/pi-mpi.py" class="external-link">https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/pi-mpi.py</a></p>
 </div>
 </div>
 </div>
@@ -2944,7 +2944,7 @@ job ID, e.g.:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta140/ta140/userid</span><span class="op">&gt;</span> sacct <span class="at">-l</span> <span class="at">-j</span> 12345</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="ex">userid@uan01:/work/ta158/ta158/userid</span><span class="op">&gt;</span> sacct <span class="at">-l</span> <span class="at">-j</span> 12345</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3446,7 +3446,7 @@ use like [gitbash][gitbash]
 <hr>
 <p>Last updated on 2024-05-21 |
         
-        <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/edit/main/episodes/18-responsibility.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/18-responsibility.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -3856,12 +3856,12 @@ use like [gitbash][gitbash]
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
         
-        <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/README.md" class="external-link">Edit on GitHub</a>
         
 	
-        | <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/EPCCed/2024-02-23-hpc-intro-brunel/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:support@archer2.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:support@archer2.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
         
@@ -3881,16 +3881,16 @@ use like [gitbash][gitbash]
     {
   "@context": "https://schema.org",
   "@type": "TrainingMaterial",
-  "@id": "https://EPCCed.github.io/2024-02-23-hpc-intro-brunel/aio.html",
+  "@id": "https://EPCCed.github.io/2024-06-20-hpc-intro-shampton/aio.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "software, data, lesson, The Carpentries, HPC, EPCC",
   "name": "All in One View",
   "creativeWorkStatus": "active",
-  "url": "https://EPCCed.github.io/2024-02-23-hpc-intro-brunel/aio.html",
-  "identifier": "https://EPCCed.github.io/2024-02-23-hpc-intro-brunel/aio.html",
-  "dateCreated": "2024-02-14",
+  "url": "https://EPCCed.github.io/2024-06-20-hpc-intro-shampton/aio.html",
+  "identifier": "https://EPCCed.github.io/2024-06-20-hpc-intro-shampton/aio.html",
+  "dateCreated": "2024-06-20",
   "dateModified": "2024-05-21",
   "datePublished": "2024-05-21"
 }
