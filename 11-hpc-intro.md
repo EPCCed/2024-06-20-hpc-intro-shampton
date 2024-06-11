@@ -7,13 +7,13 @@ exercises: 5
 
 
 ::: questions
- - "Why would I be interested in High Performance Computing (HPC)?"
- - "What can I expect to learn from this course?"
+ - Why would I be interested in High Performance Computing (HPC)?
+ - What can I expect to learn from this course?
 :::
 
 ::: objectives
- - "Be able to describe what an HPC system is"
- - "Identify how an HPC system could benefit you."
+ - Be able to describe what an HPC system is
+ - Identify how an HPC system could benefit you.
 :::
 
 ## HPC research examples

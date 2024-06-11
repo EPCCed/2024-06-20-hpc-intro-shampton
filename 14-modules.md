@@ -7,11 +7,11 @@ exercises: 15
 
 
 ::: questions
- - "How do we load and unload software packages?"
+ - How do we load and unload software packages?
 :::
 
 ::: objectives
- - "Understand how to load and use a software package."
+ - Understand how to load and use a software package.
 :::
 
 On a high-performance computing system, it is seldom the case that the software

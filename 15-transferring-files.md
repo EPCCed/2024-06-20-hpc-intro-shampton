@@ -7,12 +7,12 @@ exercises: 15
 
 
 ::: questions
- - "How do I transfer files to (and from) the cluster?"
+ - How do I transfer files to (and from) the cluster?
 :::
 
 ::: objectives
- - "`wget` and `curl -O` download a file from the internet."
-- "`scp` transfers files to and from your computer."
+ - `wget` and `curl -O` download a file from the internet.
+ - `scp` transfers files to and from your computer.
 :::
 
 ::: prereq

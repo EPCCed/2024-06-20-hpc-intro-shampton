@@ -7,13 +7,13 @@ exercises: 30
 
 
 ::: questions
- - "How do we monitor our jobs?"
- - "How can I get my jobs scheduled more easily?"
+ - How do we monitor our jobs?
+ - How can I get my jobs scheduled more easily?
 :::
 
 ::: objectives
- - "Understand how to look up job statistics and profile code."
- - "Understand job size implications."
+ - Understand how to look up job statistics and profile code.
+ - Understand job size implications.
 :::
 
 We've touched on all the skills you need to interact with an HPC cluster:
