@@ -11,17 +11,17 @@ snippets <- paste('files/snippets/', config$snippets, sep='')
 ```
 
 ::: questions
- - "How can I be a responsible user?"
- - "How can I protect my data?"
- - "How can I best get large amounts of data off an HPC system?"
+ - How can I be a responsible user?
+ - How can I protect my data?
+ - How can I best get large amounts of data off an HPC system?
 :::
 
 ::: objectives
- - "Learn how to be a considerate shared system citizen."
- - "Understand how to protect your critical data."
- - "Appreciate the challenges with transferring large amounts of data off HPC
-  systems."
- - "Understand how to convert many files to a single archive file using tar."
+ - Learn how to be a considerate shared system citizen.
+ - Understand how to protect your critical data.
+ - Appreciate the challenges with transferring large amounts of data off HPC
+  systems.
+ - Understand how to convert many files to a single archive file using tar.
 :::
 
 One of the major differences between using remote HPC resources and your own
