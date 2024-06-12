@@ -407,7 +407,7 @@ script that runs the program across two compute nodes on the cluster. Create a f
 ```{r, child=paste(snippets, '/scheduler/parallel-script.Rmd', sep=''), eval=TRUE}
 ```
 
-The parallel launch line for the sharpen program can be seen towards the bottom of the script:
+The parallel launch line for our program can be seen towards the bottom of the script:
 
 ```{r, child=paste(snippets, '/scheduler/parallel-launch-desc.Rmd', sep=''), eval=TRUE}
 ```
