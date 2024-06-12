@@ -322,7 +322,7 @@
         
 <section id="aio-11-hpc-intro"><p>Content from <a href="11-hpc-intro.html">Why use an HPC System?</a></p>
 <hr>
-<p>Last updated on 2024-06-11 |
+<p>Last updated on 2024-06-12 |
         
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/11-hpc-intro.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -498,7 +498,7 @@ results.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Some Ideas</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>Checking email: your computer (possibly in your pocket) contacts a
@@ -560,7 +560,7 @@ use like [gitbash][gitbash]
  -->
 </section></section><section id="aio-12-cluster"><p>Content from <a href="12-cluster.html">Working on a remote HPC system</a></p>
 <hr>
-<p>Last updated on 2024-06-11 |
+<p>Last updated on 2024-06-12 |
         
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/12-cluster.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1041,7 +1041,7 @@ use like [gitbash][gitbash]
  -->
 </section></section><section id="aio-13-scheduler"><p>Content from <a href="13-scheduler.html">Working with the scheduler</a></p>
 <hr>
-<p>Last updated on 2024-06-11 |
+<p>Last updated on 2024-06-12 |
         
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/13-scheduler.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1147,7 +1147,7 @@ node?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1366,7 +1366,7 @@ options we have been specifying on the command line
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1651,18 +1651,17 @@ script in it.</p>
 <span id="cb32-2"><a href="#cb32-2" tabindex="-1"></a></span>
 <span id="cb32-3"><a href="#cb32-3" tabindex="-1"></a><span class="co">#SBATCH --partition=standard</span></span>
 <span id="cb32-4"><a href="#cb32-4" tabindex="-1"></a><span class="co">#SBATCH --qos=short</span></span>
-<span id="cb32-5"><a href="#cb32-5" tabindex="-1"></a><span class="co">#SBATCH --reservation=</span></span>
-<span id="cb32-6"><a href="#cb32-6" tabindex="-1"></a><span class="co">#SBATCH --time=00:05:00</span></span>
-<span id="cb32-7"><a href="#cb32-7" tabindex="-1"></a></span>
-<span id="cb32-8"><a href="#cb32-8" tabindex="-1"></a><span class="co">#SBATCH --nodes=1</span></span>
-<span id="cb32-9"><a href="#cb32-9" tabindex="-1"></a><span class="co">#SBATCH --ntasks-per-node=16</span></span>
-<span id="cb32-10"><a href="#cb32-10" tabindex="-1"></a></span>
-<span id="cb32-11"><a href="#cb32-11" tabindex="-1"></a><span class="ex">module</span> load cray-python</span>
-<span id="cb32-12"><a href="#cb32-12" tabindex="-1"></a></span>
-<span id="cb32-13"><a href="#cb32-13" tabindex="-1"></a><span class="ex">srun</span> python pi-mpi.py 10000000</span></code></pre>
+<span id="cb32-5"><a href="#cb32-5" tabindex="-1"></a><span class="co">#SBATCH --time=00:05:00</span></span>
+<span id="cb32-6"><a href="#cb32-6" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" tabindex="-1"></a><span class="co">#SBATCH --nodes=1</span></span>
+<span id="cb32-8"><a href="#cb32-8" tabindex="-1"></a><span class="co">#SBATCH --ntasks-per-node=16</span></span>
+<span id="cb32-9"><a href="#cb32-9" tabindex="-1"></a></span>
+<span id="cb32-10"><a href="#cb32-10" tabindex="-1"></a><span class="ex">module</span> load cray-python</span>
+<span id="cb32-11"><a href="#cb32-11" tabindex="-1"></a></span>
+<span id="cb32-12"><a href="#cb32-12" tabindex="-1"></a><span class="ex">srun</span> python pi-mpi.py 10000000</span></code></pre>
 </div>
-<p>The parallel launch line for the sharpen program can be seen towards
-the bottom of the script:</p>
+<p>The parallel launch line for our program can be seen towards the
+bottom of the script:</p>
 <div class="codewrapper sourceCode" id="cb33">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1710,7 +1709,7 @@ of cores in parallel for the calculation.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Here is a modified script</p>
 <div class="codewrapper sourceCode" id="cb35">
@@ -1720,14 +1719,13 @@ of cores in parallel for the calculation.</p>
 <span id="cb35-2"><a href="#cb35-2" tabindex="-1"></a></span>
 <span id="cb35-3"><a href="#cb35-3" tabindex="-1"></a><span class="co">#SBATCH --partition=standard</span></span>
 <span id="cb35-4"><a href="#cb35-4" tabindex="-1"></a><span class="co">#SBATCH --qos=short</span></span>
-<span id="cb35-5"><a href="#cb35-5" tabindex="-1"></a><span class="co">#SBATCH --reservation=</span></span>
-<span id="cb35-6"><a href="#cb35-6" tabindex="-1"></a><span class="co">#SBATCH --time=00:00:30</span></span>
-<span id="cb35-7"><a href="#cb35-7" tabindex="-1"></a></span>
-<span id="cb35-8"><a href="#cb35-8" tabindex="-1"></a><span class="co">#SBATCH --nodes=1</span></span>
-<span id="cb35-9"><a href="#cb35-9" tabindex="-1"></a><span class="co">#SBATCH --ntasks-per-node=128</span></span>
-<span id="cb35-10"><a href="#cb35-10" tabindex="-1"></a></span>
-<span id="cb35-11"><a href="#cb35-11" tabindex="-1"></a><span class="ex">module</span> load cray-python</span>
-<span id="cb35-12"><a href="#cb35-12" tabindex="-1"></a><span class="ex">srun</span> python pi-mpi.py 10000000</span></code></pre>
+<span id="cb35-5"><a href="#cb35-5" tabindex="-1"></a><span class="co">#SBATCH --time=00:00:30</span></span>
+<span id="cb35-6"><a href="#cb35-6" tabindex="-1"></a></span>
+<span id="cb35-7"><a href="#cb35-7" tabindex="-1"></a><span class="co">#SBATCH --nodes=1</span></span>
+<span id="cb35-8"><a href="#cb35-8" tabindex="-1"></a><span class="co">#SBATCH --ntasks-per-node=128</span></span>
+<span id="cb35-9"><a href="#cb35-9" tabindex="-1"></a></span>
+<span id="cb35-10"><a href="#cb35-10" tabindex="-1"></a><span class="ex">module</span> load cray-python</span>
+<span id="cb35-11"><a href="#cb35-11" tabindex="-1"></a><span class="ex">srun</span> python pi-mpi.py 10000000</span></code></pre>
 </div>
 </div>
 </div>
@@ -1755,7 +1753,7 @@ output file to ensure that you understand the job distribution.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Show me the solution</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1802,7 +1800,7 @@ use like [gitbash][gitbash]
  -->
 </section></section><section id="aio-14-modules"><p>Content from <a href="14-modules.html">Accessing software via Modules</a></p>
 <hr>
-<p>Last updated on 2024-06-11 |
+<p>Last updated on 2024-06-12 |
         
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/14-modules.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2148,7 +2146,7 @@ use like [gitbash][gitbash]
  -->
 </section></section><section id="aio-15-transferring-files"><p>Content from <a href="15-transferring-files.html">Transferring files with remote computers</a></p>
 <hr>
-<p>Last updated on 2024-06-11 |
+<p>Last updated on 2024-06-12 |
         
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/15-transferring-files.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2294,7 +2292,7 @@ directory on ARCHER2.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2343,7 +2341,7 @@ local machine over SSH? Note that it may well fail, and that’s OK!</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Using <code>curl</code> or <code>wget</code> commands like the
 following:</p>
@@ -2495,7 +2493,7 @@ page if you’re unsure.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2620,7 +2618,7 @@ flags.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4">Commands</h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2736,7 +2734,7 @@ use like [gitbash][gitbash]
  -->
 </section></section><section id="aio-17-resources"><p>Content from <a href="17-resources.html">Using resources effectively</a></p>
 <hr>
-<p>Last updated on 2024-06-11 |
+<p>Last updated on 2024-06-12 |
         
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/17-resources.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3184,38 +3182,38 @@ like the one below.</p>
 <colgroup>
 <col width="13%">
 <col width="25%">
-<col width="17%">
+<col width="19%">
 <col width="18%">
-<col width="24%">
+<col width="23%">
 </colgroup>
 <thead><tr class="header">
 <th>Cores</th>
 <th>Overall run time (s)</th>
-<th>Ideal speedup</th>
 <th>Actual speedup</th>
+<th>Ideal speedup</th>
 <th>Parallel efficiency</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
 <td>1 (serial)</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><span class="math inline">\(t_{c1}\)</span></td>
+<td>-</td>
+<td>1</td>
+<td>1</td>
 </tr>
 <tr class="even">
 <td>2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><span class="math inline">\(t_{c2}\)</span></td>
+<td><span class="math inline">\(s_2 = t_{c1}/t_{c2}\)</span></td>
+<td><span class="math inline">\(i_2 = 2\)</span></td>
+<td><span class="math inline">\(s_2 / i_2\)</span></td>
 </tr>
 <tr class="odd">
 <td>4</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><span class="math inline">\(t_{c4}\)</span></td>
+<td><span class="math inline">\(s_4 = t_{c1}/t_{c4}\)</span></td>
+<td><span class="math inline">\(i_4 = 4\)</span></td>
+<td><span class="math inline">\(s_4 / i_4\)</span></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -3287,15 +3285,15 @@ example runtimes given in the solution above.</p>
 <colgroup>
 <col width="13%">
 <col width="25%">
-<col width="17%">
 <col width="18%">
+<col width="17%">
 <col width="24%">
 </colgroup>
 <thead><tr class="header">
 <th align="right">Cores</th>
 <th align="right">Overall run time (s)</th>
-<th align="right">Ideal speedup</th>
 <th align="right">Actual speedup</th>
+<th align="right">Ideal speedup</th>
 <th align="right">Parallel efficiency</th>
 </tr></thead>
 <tbody>
@@ -3309,57 +3307,57 @@ example runtimes given in the solution above.</p>
 <tr class="even">
 <td align="right">2</td>
 <td align="right">2.002</td>
-<td align="right">2.000</td>
 <td align="right">1.963</td>
+<td align="right">2.000</td>
 <td align="right">0.982</td>
 </tr>
 <tr class="odd">
 <td align="right">4</td>
 <td align="right">1.048</td>
-<td align="right">4.000</td>
 <td align="right">3.751</td>
+<td align="right">4.000</td>
 <td align="right">0.938</td>
 </tr>
 <tr class="even">
 <td align="right">8</td>
 <td align="right">0.572</td>
-<td align="right">8.000</td>
 <td align="right">6.872</td>
+<td align="right">8.000</td>
 <td align="right">0.859</td>
 </tr>
 <tr class="odd">
 <td align="right">16</td>
 <td align="right">0.613</td>
-<td align="right">16.000</td>
 <td align="right">6.408</td>
+<td align="right">16.000</td>
 <td align="right">0.401</td>
 </tr>
 <tr class="even">
 <td align="right">32</td>
 <td align="right">0.360</td>
-<td align="right">32.000</td>
 <td align="right">10.928</td>
+<td align="right">32.000</td>
 <td align="right">0.342</td>
 </tr>
 <tr class="odd">
 <td align="right">64</td>
 <td align="right">0.249</td>
-<td align="right">64.000</td>
 <td align="right">15.767</td>
+<td align="right">64.000</td>
 <td align="right">0.246</td>
 </tr>
 <tr class="even">
 <td align="right">128</td>
 <td align="right">0.170</td>
-<td align="right">128.000</td>
 <td align="right">23.122</td>
+<td align="right">128.000</td>
 <td align="right">0.181</td>
 </tr>
 <tr class="odd">
 <td align="right">256</td>
 <td align="right">0.187</td>
-<td align="right">256.000</td>
 <td align="right">21.077</td>
+<td align="right">256.000</td>
 <td align="right">0.082</td>
 </tr>
 </tbody>
@@ -3445,7 +3443,7 @@ use like [gitbash][gitbash]
  -->
 </section></section><section id="aio-18-responsibility"><p>Content from <a href="18-responsibility.html">Using shared resources responsibly</a></p>
 <hr>
-<p>Last updated on 2024-06-11 |
+<p>Last updated on 2024-06-12 |
         
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/18-responsibility.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3560,7 +3558,7 @@ node?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Building software, creating directories, and unpacking software are
 common and acceptable tasks for the login node: options #2
@@ -3791,7 +3789,7 @@ the following would be the best way to transfer them to ARCHER2?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Lets go through each option</p>
 <ol style="list-style-type: decimal">
@@ -3892,8 +3890,8 @@ use like [gitbash][gitbash]
   "url": "https://EPCCed.github.io/2024-06-20-hpc-intro-shampton/aio.html",
   "identifier": "https://EPCCed.github.io/2024-06-20-hpc-intro-shampton/aio.html",
   "dateCreated": "2024-06-20",
-  "dateModified": "2024-06-11",
-  "datePublished": "2024-06-11"
+  "dateModified": "2024-06-12",
+  "datePublished": "2024-06-12"
 }
 
   </script><script>

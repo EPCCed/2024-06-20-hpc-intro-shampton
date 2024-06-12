@@ -12,7 +12,6 @@ Here is a modified script
 
 #SBATCH --partition=`r config$sched$partition`
 #SBATCH --qos=`r config$sched$qos`
-#SBATCH --reservation=`r config$sched$reservation`
 #SBATCH --time=00:00:30
 
 #SBATCH --nodes=1
