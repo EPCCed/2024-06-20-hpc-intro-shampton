@@ -186,12 +186,12 @@ The calculation part is, in theory, perfectly parallel (each processor operates 
 |------------|----------------------|----------------------|--------------------------|
 | 1 (serial) |                      |                      |                          |
 | 2          |                      |                      |                          |
-| 4          |                      |                      |                          |                    
-| 8          |                      |                      |                          | 
-| 16         |                      |                      |                          | 
-| 32         |                      |                      |                          | 
-| 64         |                      |                      |                          |              
-| 128        |                      |                      |                          | 
+| 4          |                      |                      |                          |
+| 8          |                      |                      |                          |
+| 16         |                      |                      |                          |
+| 32         |                      |                      |                          |
+| 64         |                      |                      |                          |
+| 128        |                      |                      |                          |
 | 256        |                      |                      |                          |
 
 Look at your results – do they make sense? Given the structure of the code, you would
@@ -242,17 +242,17 @@ effective use of resources.
 ## Computing the speedup and parallel efficiency
 Use your *Overall run times* from above to fill in a table like the one below.
 
-| Cores      | Overall run time (s) | Ideal speedup | Actual speedup | Parallel efficiency |
-|------------|----------------------|---------------|----------------|---------------------|
-| 1 (serial) |                      |               |                |                     |
-| 2          |                      |               |                |                     |
-| 4          |                      |               |                |                     |                   
-| 8          |                      |               |                |                     | 
-| 16         |                      |               |                |                     |
-| 32         |                      |               |                |                     |
-| 64         |                      |               |                |                     |             
-| 128        |                      |               |                |                     |
-| 256        |                      |               |                |                     |
+| Cores      | Overall run time (s) | Actual speedup  | Ideal speedup | Parallel efficiency |
+|------------|----------------------|-----------------|----------------|---------------------|
+| 1 (serial) |        $t_{c1}$      |       -         |       1        |          1         |
+| 2          |        $t_{c2}$      | $s_2 = t_{c1}/t_{c2}$ | $i_2 = 2$ |  $s_2 / i_2$     |
+| 4          |        $t_{c4}$      | $s_4 = t_{c1}/t_{c4}$ | $i_4 = 4$ |  $s_4 / i_4$     |                   
+| 8          |                      |                 |                |                     | 
+| 16         |                      |                 |                |                     |
+| 32         |                      |                 |                |                     |
+| 64         |                      |                 |                |                     |             
+| 128        |                      |                 |                |                     |
+| 256        |                      |                 |                |                     |
 
 Given your results, try to answer the following questions:
 
@@ -267,17 +267,17 @@ Given your results, try to answer the following questions:
 The table below gives example results for ARCHER2 based on the example 
 runtimes given in the solution above.
 
-| Cores      | Overall run time (s) | Ideal speedup | Actual speedup | Parallel efficiency |
-|-----------:|---------------------:|--------------:|---------------:|--------------------:|
-|          1 |                3.931 |         1.000 |          1.000 |               1.000 |
-|          2 |                2.002 |         2.000 |          1.963 |               0.982 |
-|          4 |                1.048 |         4.000 |          3.751 |               0.938 |
-|          8 |                0.572 |         8.000 |          6.872 |               0.859 |
-|         16 |                0.613 |        16.000 |          6.408 |               0.401 |
-|         32 |                0.360 |        32.000 |         10.928 |               0.342 |
-|         64 |                0.249 |        64.000 |         15.767 |               0.246 |
-|        128 |                0.170 |       128.000 |         23.122 |               0.181 |
-|        256 |                0.187 |       256.000 |         21.077 |               0.082 |
+| Cores      | Overall run time (s) | Actual speedup | Ideal speedup | Parallel efficiency |
+|-----------:|---------------------:|---------------:|--------------:|--------------------:|
+|          1 |                3.931 |          1.000 |         1.000 |               1.000 |
+|          2 |                2.002 |          1.963 |         2.000 |               0.982 |
+|          4 |                1.048 |          3.751 |         4.000 |               0.938 |
+|          8 |                0.572 |          6.872 |         8.000 |               0.859 |
+|         16 |                0.613 |          6.408 |        16.000 |               0.401 |
+|         32 |                0.360 |         10.928 |        32.000 |               0.342 |
+|         64 |                0.249 |         15.767 |        64.000 |               0.246 |
+|        128 |                0.170 |         23.122 |       128.000 |               0.181 |
+|        256 |                0.187 |         21.077 |       256.000 |               0.082 |
 
 ### What is the core count where you get the **most** efficient use of resources?
 Just using a single core is the cheapest (and always will be unless your speedup is better

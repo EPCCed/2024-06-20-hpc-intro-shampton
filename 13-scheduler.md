@@ -494,7 +494,6 @@ script that runs the program across two compute nodes on the cluster. Create a f
 
 #SBATCH --partition=standard
 #SBATCH --qos=short
-#SBATCH --reservation=
 #SBATCH --time=00:05:00
 
 #SBATCH --nodes=1
@@ -505,7 +504,7 @@ module load cray-python
 srun python pi-mpi.py 10000000
 ```
 
-The parallel launch line for the sharpen program can be seen towards the bottom of the script:
+The parallel launch line for our program can be seen towards the bottom of the script:
 
 
 ```bash
@@ -545,7 +544,6 @@ Here is a modified script
 
 #SBATCH --partition=standard
 #SBATCH --qos=short
-#SBATCH --reservation=
 #SBATCH --time=00:00:30
 
 #SBATCH --nodes=1
