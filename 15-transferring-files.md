@@ -49,7 +49,7 @@ and `wget https://some/link/to/a/file`. Try it out by downloading
 some material we'll use later on, from a terminal on your local machine.
 
 ```bash
-[user@laptop ~]$ curl -O /files/hpc-intro-data.tar.gz
+[user@laptop ~]$ curl -O https://epcced.github.io/2024-06-20-hpc-intro-shampton/files/hpc-intro-data.tar.gz
 ```
 or
 ```bash

@@ -50,7 +50,7 @@ sched:
   flag:
     user: "-u userid"
     interactive: ""
-    histdetail: "-l -j"
+    histdetail: "-j"
     name: "--job-name"
     time: "--time"
     queue: "--partition"

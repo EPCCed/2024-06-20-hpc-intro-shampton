@@ -110,7 +110,8 @@ srun python pi-mpi.py 10000000
 
 Run application using a single process (i.e. in serial) with a blocking `srun` command:
 ```bash
-srun python pi-mpi.py 10000000
+module load cray-python
+ srun --partition=standard --qos=short python pi-mpi.py 10000000
 ```
 
 Submit with to the batch queue with:
