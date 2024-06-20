@@ -4,7 +4,6 @@ Creating a file called `submit-pi-mpi.slurm`:
 #!/bin/bash
 #SBATCH --partition=`r config$sched$partition`
 #SBATCH --qos=`r config$sched$qos`
-#SBATCH --reservation=`r config$sched$reservation`
 
 #SBATCH --job-name=pi-mpi
 #SBATCH --nodes=1

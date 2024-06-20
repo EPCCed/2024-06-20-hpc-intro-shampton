@@ -252,7 +252,6 @@ on the command line (e.g. `--partition`) into the script at this point.
 `r config$sched$comment` `r config$sched$flag$time` 00:01:15
 `r config$sched$comment` --partition=standard
 `r config$sched$comment` --qos=`r config$sched$qos`
-`r config$sched$comment` --reservation=`r config$sched$reservation`
 echo -n "This script is running on "
 sleep 60 # time in seconds
 hostname
@@ -285,7 +284,6 @@ walltime, and attempt to run a job for two minutes.
 `r config$sched$comment` `r config$sched$flag$time` 00:00:30
 `r config$sched$comment` --partition=`r config$sched$partition`
 `r config$sched$comment` --qos=`r config$sched$qos`
-`r config$sched$comment` --reservation=`r config$sched$reservation`
 
 echo "This script is running on ... "
 sleep 120 # time in seconds

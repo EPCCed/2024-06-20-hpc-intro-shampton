@@ -215,7 +215,6 @@ compute node).
 `r config$remote$bash_shebang`
 `r config$sched$comment` --partition=standard
 `r config$sched$comment` --qos=`r config$sched$qos`
-`r config$sched$comment` --reservation=`r config$sched$reservation`
 module load epcc-job-env
 module load cray-netcdf
 ncdump --version
