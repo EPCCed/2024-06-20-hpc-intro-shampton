@@ -264,7 +264,6 @@ userid@uan01:/work/ta158/ta158/userid> cat example-job.sh
 #SBATCH --time 00:01:15
 #SBATCH --partition=standard
 #SBATCH --qos=short
-#SBATCH --reservation=
 echo -n "This script is running on "
 sleep 60 # time in seconds
 hostname
@@ -305,7 +304,6 @@ userid@uan01:/work/ta158/ta158/userid> cat example-job.sh
 #SBATCH --time 00:00:30
 #SBATCH --partition=standard
 #SBATCH --qos=short
-#SBATCH --reservation=
 
 echo "This script is running on ... "
 sleep 120 # time in seconds

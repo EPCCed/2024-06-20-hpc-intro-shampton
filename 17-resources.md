@@ -100,7 +100,6 @@ Creating a file called `submit-pi-mpi.slurm`:
 #!/bin/bash
 #SBATCH --partition=standard
 #SBATCH --qos=short
-#SBATCH --reservation=
 
 #SBATCH --job-name=pi-mpi
 #SBATCH --nodes=1
