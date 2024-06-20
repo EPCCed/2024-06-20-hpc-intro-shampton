@@ -53,7 +53,7 @@ and `wget https://some/link/to/a/file`. Try it out by downloading
 some material we'll use later on, from a terminal on your local machine.
 
 ```bash
-`r config$local$prompt` curl -O `r config$url``r config$bseurl`/files/hpc-intro-data.tar.gz
+`r config$local$prompt` curl -O `r config$url``r config$baseurl`/files/hpc-intro-data.tar.gz
 ```
 or
 ```bash
