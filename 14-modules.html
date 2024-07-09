@@ -27,7 +27,7 @@
             <span class="visually-hidden">This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team.</span>
           </abbr>
         </span>
-        
+
       </div>
     </div>
     <div class="selector-container">
@@ -56,7 +56,7 @@
             </li>
           </ul></li>
       </div>
-      
+
       <div class="dropdown" id="instructor-dropdown">
         <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
           <i aria-hidden="true" class="icon" data-feather="eye"></i> Learner View <i data-feather="chevron-down"></i>
@@ -180,7 +180,7 @@
                 </div><!--/div.accordion-flush-->
               </div><!--div.sidenav-view-selector -->
             </div><!--/div.col -->
-      
+
             <hr></div><!--/div.mobile-row -->
 
           <div class="accordion accordion-flush" id="accordionFlush11">
@@ -199,7 +199,7 @@
     <div class="accordion-header" id="flush-heading1">
         <a href="index.html">Summary and Setup</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -208,7 +208,7 @@
     <div class="accordion-header" id="flush-heading2">
         <a href="11-hpc-intro.html">1. Why use an HPC System?</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -217,7 +217,7 @@
     <div class="accordion-header" id="flush-heading3">
         <a href="12-cluster.html">2. Working on a remote HPC system</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -226,7 +226,7 @@
     <div class="accordion-header" id="flush-heading4">
         <a href="13-scheduler.html">3. Working with the scheduler</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -240,7 +240,7 @@
         </span>
       </button>
     </div><!--/div.accordion-header-->
-        
+
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#environment-modules">Environment Modules</a></li>
@@ -248,7 +248,7 @@
 <li><a href="#software-versioning">Software versioning</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -257,7 +257,7 @@
     <div class="accordion-header" id="flush-heading6">
         <a href="15-transferring-files.html">5. Transferring files with remote computers</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -266,7 +266,7 @@
     <div class="accordion-header" id="flush-heading7">
         <a href="17-resources.html">6. Using resources effectively</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -275,7 +275,7 @@
     <div class="accordion-header" id="flush-heading8">
         <a href="18-responsibility.html">7. Using shared resources responsibly</a>
     </div><!--/div.accordion-header-->
-        
+
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
@@ -307,10 +307,10 @@
               </div>
             </div>
             <hr class="half-width resources"><a href="aio.html">See all in one page</a>
-            
+
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
-            
+
             </div>
           </div><!-- /div.accordion -->
         </div><!-- /div.sidebar-inner -->
@@ -331,18 +331,18 @@
           Previous: Working with the
         </a>
         <a class="chapter-link float-end" href="15-transferring-files.html" rel="next">
-          Next: Transferring files... 
+          Next: Transferring files...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Accessing software via Modules</h1>
-        <p>Last updated on 2024-07-02 |
-        
+        <p>Last updated on 2024-07-09 |
+
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/14-modules.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-        
-        
-        
+
+
+
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -399,8 +399,8 @@ particular version) depends on having access to another software package
 the VASP materials science software may depend on having a particular
 version of the FFTW (Fastest Fourier Transform in the West) software
 library available for it to work.</p>
-<section id="environment-modules"><h2 class="section-heading">Environment Modules<a class="anchor" aria-label="anchor" href="#environment-modules"></a>
-</h2>
+<section><h2 class="section-heading" id="environment-modules">Environment Modules<a class="anchor" aria-label="anchor" href="#environment-modules"></a>
+<a class="anchor" aria-label="anchor" href="#environment-modules"></a></h2>
 <hr class="half-width"><p>Environment modules are the solution to these problems. A
 <em>module</em> is a self-contained description of a software package —
 it contains the settings required to run a software package and,
@@ -431,28 +431,28 @@ of the system you are using.</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>----------- /work/y07/shared/archer2-modules/modulefiles-cse-pyvenvs -----------
-tensorflow/2.3.1-py38  torch/1.6.0-py38  
+tensorflow/2.3.1-py38  torch/1.6.0-py38
 
 ----------- /work/y07/shared/archer2-modules/modulefiles-cse-pymods ------------
-python-netCDF4/1.5.5.1  
+python-netCDF4/1.5.5.1
 
 ------------ /work/y07/shared/archer2-modules/modulefiles-cse-utils ------------
-bolt/0.7                  ncview/ncview-2.1.7-gcc-10.1.0  vmd/1.9.3-mpi-gcc10  
-cmake/3.18.4              reframe/3.2                     xios/2.5-gcc10       
-ed/1.16-gcc10             tcl/8.4.20-gcc10                xthi/1.0             
-epcc-job-env              tcl/8.5.0-gcc10                 xthi/1.0-gcc10       
-epcc-reframe/0.1          tcl/8.6.0-gcc10                 
-genmaskcpu/1.0            tcl/8.6.10-gcc10(default)       
-gnuplot/5.4.1-gcc-10.1.0  tk/8.5.6-gcc10                  
-lzip/1.20-gcc10           tk/8.6.10-gcc10(default)        
-nco/4.9.6                 visidata/2.1                    
-nco/4.9.6-gcc-10.1.0      vmd/1.9.3-gcc10(default)        
+bolt/0.7                  ncview/ncview-2.1.7-gcc-10.1.0  vmd/1.9.3-mpi-gcc10
+cmake/3.18.4              reframe/3.2                     xios/2.5-gcc10
+ed/1.16-gcc10             tcl/8.4.20-gcc10                xthi/1.0
+epcc-job-env              tcl/8.5.0-gcc10                 xthi/1.0-gcc10
+epcc-reframe/0.1          tcl/8.6.0-gcc10
+genmaskcpu/1.0            tcl/8.6.10-gcc10(default)
+gnuplot/5.4.1-gcc-10.1.0  tk/8.5.6-gcc10
+lzip/1.20-gcc10           tk/8.6.10-gcc10(default)
+nco/4.9.6                 visidata/2.1
+nco/4.9.6-gcc-10.1.0      vmd/1.9.3-gcc10(default)
 
 ------------ /work/y07/shared/archer2-modules/modulefiles-cse-libs -------------
-adios/1.13.1     hypre/2.18.0             mumps/5.2.1     superlu-dist/6.1.1  
-boost/1.72.0     libxml2/2.9.7-gcc-9.3.0  parmetis/4.0.3  superlu/5.2.1       
-glm/0.9.9.6      matio/1.5.18             petsc/3.13.3    trilinos/12.18.1    
-gmp/6.1.2-gcc10  metis/5.1.0              scotch/6.0.10   
+adios/1.13.1     hypre/2.18.0             mumps/5.2.1     superlu-dist/6.1.1
+boost/1.72.0     libxml2/2.9.7-gcc-9.3.0  parmetis/4.0.3  superlu/5.2.1
+glm/0.9.9.6      matio/1.5.18             petsc/3.13.3    trilinos/12.18.1
+gmp/6.1.2-gcc10  metis/5.1.0              scotch/6.0.10
 ...</code></pre>
 </div>
 </div>
@@ -470,17 +470,17 @@ loaded, you will see a message telling you so</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>Currently Loaded Modulefiles:
- 1) cpe-cray                          8) perftools-base/20.10.0(default)                                  
- 2) cce/10.0.4(default)               9) xpmem/2.2.35-7.0.1.0_1.9__gd50fabf.shasta(default)               
- 3) craype/2.7.2(default)            10) cray-mpich/8.0.16(default)                                       
- 4) craype-x86-rome                  11) cray-libsci/20.10.1.2(default)                                   
- 5) libfabric/1.11.0.0.233(default)  12) bolt/0.7                                                         
- 6) craype-network-ofi               13) /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env  
+ 1) cpe-cray                          8) perftools-base/20.10.0(default)
+ 2) cce/10.0.4(default)               9) xpmem/2.2.35-7.0.1.0_1.9__gd50fabf.shasta(default)
+ 3) craype/2.7.2(default)            10) cray-mpich/8.0.16(default)
+ 4) craype-x86-rome                  11) cray-libsci/20.10.1.2(default)
+ 5) libfabric/1.11.0.0.233(default)  12) bolt/0.7
+ 6) craype-network-ofi               13) /work/y07/shared/archer2-modules/modulefiles-cse/epcc-setup-env
  7) cray-dsmml/0.1.2(default)        14) /usr/local/share/epcc-module/epcc-module-loader  </code></pre>
 </div>
 </div>
-</section><section id="loading-and-unloading-software"><h2 class="section-heading">Loading and Unloading Software<a class="anchor" aria-label="anchor" href="#loading-and-unloading-software"></a>
-</h2>
+</section><section><h2 class="section-heading" id="loading-and-unloading-software">Loading and Unloading Software<a class="anchor" aria-label="anchor" href="#loading-and-unloading-software"></a>
+<a class="anchor" aria-label="anchor" href="#loading-and-unloading-software"></a></h2>
 <hr class="half-width"><p>To load a software module, use <code>module load</code>. Let’s say we
 would like to use the NetCDF utility <code>ncdump</code>.</p>
 <p>On login, <code>ncdump</code> is not available. We can test this by
@@ -562,8 +562,8 @@ what happens to the <code>PATH</code> environment variable.</p>
 </div>
 </div>
 </div>
-</section><section id="software-versioning"><h2 class="section-heading">Software versioning<a class="anchor" aria-label="anchor" href="#software-versioning"></a>
-</h2>
+</section><section><h2 class="section-heading" id="software-versioning">Software versioning<a class="anchor" aria-label="anchor" href="#software-versioning"></a>
+<a class="anchor" aria-label="anchor" href="#software-versioning"></a></h2>
 <hr class="half-width"><p>So far, we’ve learned how to load and unload software packages. This
 is very useful. However, we have not yet addressed the issue of software
 versioning. At some point or other, you will run into issues where only
@@ -582,7 +582,7 @@ closely.</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>--------------------------- /opt/cray/pe/modulefiles ---------------------------
-cray-netcdf-hdf5parallel/4.7.4.0           cray-netcdf/4.7.4.0           
+cray-netcdf-hdf5parallel/4.7.4.0           cray-netcdf/4.7.4.0
 cray-netcdf-hdf5parallel/4.7.4.2(default)  cray-netcdf/4.7.4.2(default)  </code></pre>
 </div>
 <p>Note that we have two different versions of <code>cray-netcdf</code>
@@ -667,9 +667,9 @@ for you automatically.”</li>
 </ul></div>
 </div>
 </div>
-<!-- 
+<!--
 Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use. 
+any links that you are not going to use.
 
 use like [gitbash][gitbash]
  -->
@@ -685,7 +685,7 @@ use like [gitbash][gitbash]
           Previous: Working with the
         </a>
         <a class="chapter-link float-end" href="15-transferring-files.html" rel="next">
-          Next: Transferring files... 
+          Next: Transferring files...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -696,18 +696,18 @@ use like [gitbash][gitbash]
       		<footer class="row footer mx-md-3"><hr><div class="col-md-6">
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
-        
+
         <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/edit/main/episodes/14-modules.Rmd" class="external-link">Edit on GitHub</a>
-        
+
 	
         | <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/" class="external-link">Source</a></p>
 				<p><a href="https://github.com/EPCCed/2024-06-20-hpc-intro-shampton/blob/main/CITATION" class="external-link">Cite</a> | <a href="mailto:support@archer2.ac.uk">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
-        
+
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
-        
+
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
         <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.16.5" class="external-link">sandpaper (0.16.5)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.6" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/carpentries/varnish/tree/1.0.3" class="external-link">varnish (1.0.3)</a></p>
 			</div>
@@ -731,8 +731,8 @@ use like [gitbash][gitbash]
   "url": "https://EPCCed.github.io/2024-06-20-hpc-intro-shampton/14-modules.html",
   "identifier": "https://EPCCed.github.io/2024-06-20-hpc-intro-shampton/14-modules.html",
   "dateCreated": "2024-06-20",
-  "dateModified": "2024-07-02",
-  "datePublished": "2024-07-02"
+  "dateModified": "2024-07-09",
+  "datePublished": "2024-07-09"
 }
 
   </script><script>
